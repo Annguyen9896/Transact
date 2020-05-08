@@ -10,7 +10,6 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
@@ -51,7 +50,7 @@ class SignInViewController: UIViewController {
         view.addSubview(myActivityIndicator)
                
         //Send HTTP Requeste to register new user
-        let myURL = "http://transactserver.eastus.cloudapp.azure.com:3000/checkuser"
+        let myURL = "http://translocationserver.eastus.cloudapp.azure.com:3000/checkuser"
         guard let resourceURL = URL(string: myURL) else {fatalError()}
         var request = URLRequest(url:resourceURL)
         request.httpMethod = "POST" //compose a query string
@@ -85,6 +84,7 @@ class SignInViewController: UIViewController {
                     self.displayMessage(userMessage: "User Name or Password is invalid, please try again!")
                 }
                 else{
+                    StructOperation.globalVariable.userName = self.userNameTextField.text!
                     DispatchQueue.main.async {
                           let homePageViewController =
                             self.storyboard?.instantiateViewController(identifier:"HomePageViewController") as! HomePageViewController
@@ -131,15 +131,5 @@ class SignInViewController: UIViewController {
                   self.present(alertController, animated: true, completion: nil)
               }
           }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

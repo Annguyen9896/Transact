@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E5A0C902446A230004031D7 /* StructOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A0C8F2446A230004031D7 /* StructOperation.swift */; };
+		8E5A0C922446A773004031D7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A0C912446A773004031D7 /* Message.swift */; };
+		8E5A0C942446A80D004031D7 /* SendLocationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5A0C932446A80D004031D7 /* SendLocationAPI.swift */; };
 		8EAF3C7B2435460900CCD238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF3C7A2435460900CCD238 /* AppDelegate.swift */; };
 		8EAF3C7D2435460900CCD238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF3C7C2435460900CCD238 /* SceneDelegate.swift */; };
 		8EAF3C7F2435460900CCD238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAF3C7E2435460900CCD238 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E5A0C8F2446A230004031D7 /* StructOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructOperation.swift; sourceTree = "<group>"; };
+		8E5A0C912446A773004031D7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8E5A0C932446A80D004031D7 /* SendLocationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLocationAPI.swift; sourceTree = "<group>"; };
 		8EAF3C772435460900CCD238 /* Transact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAF3C7A2435460900CCD238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EAF3C7C2435460900CCD238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 				8EC12642243658A70055DBC5 /* RegisterUserViewController.swift */,
 				8EC1264424368BEF0055DBC5 /* HomePageViewController.swift */,
 				8EF24C362438151B0081F677 /* Location.swift */,
+				8E5A0C8F2446A230004031D7 /* StructOperation.swift */,
+				8E5A0C912446A773004031D7 /* Message.swift */,
+				8E5A0C932446A80D004031D7 /* SendLocationAPI.swift */,
 			);
 			path = Transact;
 			sourceTree = "<group>";
@@ -274,9 +283,12 @@
 				8EAF3C7F2435460900CCD238 /* ViewController.swift in Sources */,
 				8EAF3C7B2435460900CCD238 /* AppDelegate.swift in Sources */,
 				8EC12641243656EB0055DBC5 /* SignInViewController.swift in Sources */,
+				8E5A0C922446A773004031D7 /* Message.swift in Sources */,
 				8EC12643243658A70055DBC5 /* RegisterUserViewController.swift in Sources */,
 				8EC1264524368BEF0055DBC5 /* HomePageViewController.swift in Sources */,
 				8EAF3C7D2435460900CCD238 /* SceneDelegate.swift in Sources */,
+				8E5A0C942446A80D004031D7 /* SendLocationAPI.swift in Sources */,
+				8E5A0C902446A230004031D7 /* StructOperation.swift in Sources */,
 				8EF24C372438151B0081F677 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

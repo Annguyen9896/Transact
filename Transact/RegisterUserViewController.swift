@@ -56,7 +56,7 @@ class RegisterUserViewController: UIViewController {
         view.addSubview(myActivityIndicator)
         
         //Send HTTP Requeste to register new user
-        let myURL = "http://transactserver.eastus.cloudapp.azure.com:3000/adduser"
+        let myURL = "http://translocationserver.eastus.cloudapp.azure.com:3000/adduser"
         guard let resourceURL = URL(string: myURL) else {fatalError()}
         var request = URLRequest(url:resourceURL)
         request.httpMethod = "POST" //compose a query string
